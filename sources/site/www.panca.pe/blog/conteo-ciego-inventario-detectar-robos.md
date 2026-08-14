@@ -83,7 +83,7 @@ No todas las diferencias son robos. Aquí una guía rápida:
 
 | Tipo de diferencia | Causa probable | Acción |
 | --- | --- | --- |
-| Diferencia pequeña y consistente (<2%) | Merma natural, evaporación | Aceptable, monitorear |
+| Diferencia pequeña y consistente (&lt;2%) | Merma natural, evaporación | Aceptable, monitorear |
 | Diferencia que siempre favorece al almacén | Error de registro en entradas | Revisar guías de remisión |
 | Diferencia negativa en insumos de alto valor | Robo probable | Investigar con cámaras, cambiar horarios |
 | Diferencia que aparece siempre en el mismo turno | Empleado específico | Rotación y supervisión |
