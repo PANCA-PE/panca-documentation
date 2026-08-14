@@ -1,20 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Panca",
+  "projectType": "saas",
+  "projectName": "Panca",
+  "projectDescription": "Panca is a cloud-based POS and business management platform for restaurants and retail stores in Peru, combining point of sale, inventory control, kitchen display, and SUNAT electronic invoicing in a single system.",
   "theme": "almond",
-  "colors": {
-    "primary": "#fc6c34",
-    "light": "#fcb494"
-  },
-  "favicon": "https://media.brand.dev/9c10b867-8def-4176-bbde-08348edec9ca.svg",
-  "fonts": {
-    "heading": {
-      "family": "Plus Jakarta Sans"
-    },
-    "body": {
-      "family": "Plus Jakarta Sans"
-    }
-  },
+  "primaryColor": "#fc6c34",
+  "lightColor": "#fcb494",
+  "darkColor": null,
   "navigation": {
     "tabs": [
       {
@@ -90,11 +81,28 @@
       }
     ]
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Get Started Free",
-      "href": "https://www.panca.pe/#agenda-demo"
-    }
-  }
+  "keyFeatures": [
+    "Point of Sale (POS) for restaurants and retail stores",
+    "Electronic invoicing integrated with SUNAT (boletas, facturas, notas de crédito)",
+    "Automatic inventory management — stock decremented per sale",
+    "Recipe management and food cost calculation per dish",
+    "Kitchen Display System (KDS) connecting front-of-house to kitchen in real time",
+    "Digital QR menu and online ordering",
+    "Delivery integrations (PedidosYa, Rappi, own online store)",
+    "Multi-branch and multi-device support",
+    "Real-time sales reports and analytics dashboard",
+    "Offline mode for uninterrupted operation",
+    "Compatible hardware (POS terminals, thermal printers, barcode scanners, self-service kiosk)",
+    "Lot and expiry date tracking (pharmacies, bodegas)",
+    "Multiple price lists for wholesale/retail",
+    "24/7 support included in all plans"
+  ],
+  "publicApiSurface": [
+    "REST API for custom integrations (Enterprise plan)",
+    "PedidosYa integration",
+    "Rappi integration",
+    "SUNAT electronic invoicing API (boletas, facturas, notas de crédito)",
+    "Excel product catalog import",
+    "Excel data export"
+  ]
 }

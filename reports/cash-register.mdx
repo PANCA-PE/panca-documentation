@@ -1,0 +1,97 @@
+---
+title: "Daily Cash Register Close and Reconciliation"
+sidebarTitle: "Cash Register"
+description: "Run your daily cierre de caja in one click — total sales, payment method breakdown, cash count, and automatic difference flagging all in one screen."
+---
+
+The **cierre de caja** (cash register close) is the financial checkpoint at the end of every shift. It gives you a complete picture of what came in, how it was paid, and whether the physical cash in your drawer matches what the system expects. Panca automates all the arithmetic — you just count the bills and coins, enter the total, and the system tells you immediately if everything lines up. No more manual calculations, no more end-of-night stress.
+
+## What the Cash Register Close Covers
+
+Every cierre de caja report in Panca includes:
+
+- **Total sales** for the shift or day
+- **Opening float** — the amount of cash you started the register with
+- **Breakdown by payment method** — exact totals for cash, card, Yape, Plin, and any other methods used
+- **Expected cash** — the opening float plus all cash payments received
+- **Physical cash entered** — the amount you count and enter manually
+- **Difference** — any gap between expected and actual cash, flagged automatically so nothing slips through
+
+<CardGroup cols={2}>
+  <Card title="Payment Method Breakdown" icon="credit-card" href="#run-the-daily-close">
+    See exactly how much came in via cash, card, Yape, and Plin.
+  </Card>
+  <Card title="Opening Float Tracking" icon="vault" href="#run-the-daily-close">
+    Record your starting cash so the expected balance is always accurate.
+  </Card>
+  <Card title="Automatic Difference Flagging" icon="triangle-exclamation" href="#run-the-daily-close">
+    Panca highlights any discrepancy between expected and counted cash.
+  </Card>
+  <Card title="Print or Export Summary" icon="file-export" href="#run-the-daily-close">
+    Download a PDF or print the close report for your records.
+  </Card>
+</CardGroup>
+
+## Run the Daily Close
+
+<Steps>
+  <Step title="Go to Caja at the end of your shift">
+    In the main navigation, click **Caja**. The register screen shows all transactions recorded since the last close, organized by payment method. Confirm you are looking at the correct shift before proceeding.
+  </Step>
+  <Step title="Click Cierre de Caja">
+    Select the **Cierre de Caja** button in the top-right corner of the Caja screen. Panca immediately calculates your total sales, subtotals per payment method, and the expected cash balance based on your opening float.
+  </Step>
+  <Step title="Review the summary">
+    The close summary screen displays total sales, a line-by-line payment method breakdown (cash, card, Yape, Plin), and the expected cash in the drawer. Check that the digital totals match your receipts before entering your physical count.
+  </Step>
+  <Step title="Enter your physical cash count">
+    Count the bills and coins in your drawer. Enter the total in the **Efectivo contado** field. You can break it down by denomination if your workflow requires it, or enter a single total.
+  </Step>
+  <Step title="Review any flagged differences">
+    If the amount you entered differs from what Panca expects, the system highlights the discrepancy in red and shows you the exact shortfall or surplus. Review your transactions to find the source before closing.
+  </Step>
+  <Step title="Print or export the summary">
+    Once you are satisfied, click **Confirmar Cierre**. Panca locks the period and generates the close report. Use the **Imprimir** button to print a physical copy for your records, or click **Exportar** to download a PDF.
+  </Step>
+</Steps>
+
+## Understanding the Payment Method Breakdown
+
+The cierre de caja table lists each payment method separately so you can reconcile each one independently:
+
+| Payment Method | What to reconcile |
+|---|---|
+| **Efectivo (Cash)** | Count your drawer and compare to the expected balance |
+| **Tarjeta (Card)** | Match against your POS terminal or bank settlement |
+| **Yape** | Compare to your Yape business account movements |
+| **Plin** | Compare to your Plin account statement |
+
+<Note>
+  SUNAT tax reports — including your monthly IGV summary — are generated separately from the cierre de caja. See the [Electronic Invoicing](/invoicing/electronic-invoicing) page for details on exporting your tax reports for your accountant.
+</Note>
+
+## Managing Differences
+
+<Accordion title="What to do when there is a cash surplus">
+  A surplus means the physical cash count is higher than expected. Common causes include a sale that was not registered, a payment method recorded incorrectly, or change given out incorrectly to a customer. Review the transaction log in **Caja → Historial** to identify the discrepancy before confirming the close.
+</Accordion>
+
+<Accordion title="What to do when there is a cash shortage">
+  A shortage means less physical cash than expected. Check for unregistered refunds, missing entries, or errors in change. If the difference is small and recurring, it may indicate a training issue with your team on how to register mixed-payment transactions.
+</Accordion>
+
+<Accordion title="How to view historical close reports">
+  Go to **Reportes → Caja** to access every past cierre de caja. You can filter by date, shift, or cashier and re-download any report. Panca stores all close records indefinitely.
+</Accordion>
+
+<Accordion title="Setting your opening float">
+  Before the first sale of the day, click **Apertura de Caja** and enter the amount of cash you are placing in the drawer. Panca uses this figure to calculate the expected cash balance at close. If you skip this step, the system defaults to a zero opening float.
+</Accordion>
+
+<Tip>
+  For high-volume restaurants with long service hours, run a **mid-day partial close** at the end of the lunch shift. This gives your manager a clean snapshot of the morning's performance and reduces the cash you carry through the afternoon. To do this, follow the same cierre de caja steps above — Panca opens a fresh register for the next shift automatically.
+</Tip>
+
+<Warning>
+  Once you confirm a cierre de caja, the period is locked and transactions cannot be added retroactively. Always make sure all payments have been registered before clicking **Confirmar Cierre**.
+</Warning>

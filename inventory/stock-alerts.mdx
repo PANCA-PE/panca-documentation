@@ -1,0 +1,96 @@
+---
+title: "Stock Alerts and Low Inventory Notifications"
+sidebarTitle: "Stock Alerts"
+description: "Configure minimum stock thresholds, receive automatic low-stock and near-expiry notifications, track lots, and register waste to protect your margins."
+---
+
+Running out of a key ingredient mid-service or discovering expired products you can no longer sell are two of the most preventable losses in any food or retail operation. Panca's alert system lets you define exactly when you want to be warned — per ingredient or product — and delivers those warnings to your dashboard and notifications before a problem becomes a crisis.
+
+## Setting up minimum stock levels
+
+Configure a minimum stock threshold for any ingredient or product so Panca knows when to alert you.
+
+<Steps>
+  <Step title="Open the ingredient or product">
+    Go to **Inventario → Insumos** (for restaurant ingredients) or **Inventario → Productos** (for retail items) and select the item you want to configure.
+  </Step>
+  <Step title="Set the minimum stock level">
+    In the item detail view, enter a value in the **Stock mínimo** field. Use the same unit of measure as the item — for example, enter `10` if the unit is kg, or `5` if the unit is liters.
+  </Step>
+  <Step title="Save the threshold">
+    Save the item. Panca now monitors this ingredient continuously. As soon as current stock drops to or below the minimum, an alert appears on your inventory dashboard and a notification is sent to the account owner.
+  </Step>
+  <Step title="Restock and clear the alert">
+    Register a purchase order or a manual stock entry to bring the ingredient back above its minimum. The alert clears automatically once stock is replenished.
+  </Step>
+</Steps>
+
+## How alerts appear
+
+Your inventory dashboard groups all active alerts in a dedicated **Alertas** panel. Each alert shows the item name, current stock, and minimum threshold so you can prioritize restocking at a glance.
+
+| Alert type | Trigger | Example |
+|---|---|---|
+| Critical stock | At or below minimum | Aceite vegetal: 2.1 L remaining — minimum 5 L |
+| Low stock | Approaching minimum | Arroz: 8.5 kg remaining — minimum 10 kg |
+| Near expiry | Configurable days before expiry date | Crema de leche: expires in 2 days — 3 units |
+
+<Warning>
+  Alerts are only as useful as the thresholds you set. If a minimum stock level is too low, the alert arrives too late to reorder before you run out. Set thresholds that account for your typical lead time from suppliers.
+</Warning>
+
+## Near-expiry alerts and lot tracking
+
+For businesses that handle perishable goods — pharmacies, bodegas, restaurants with dairy or fresh produce — Panca can track lot numbers and expiry dates at the product level.
+
+- **Lot registration:** When you receive stock, record the lot number and expiry date alongside the quantity. Panca links every unit to its lot.
+- **Near-expiry notifications:** Set a configurable number of days before expiry (for example, 3 days or 7 days) for Panca to alert you. This gives you time to use or promote those products before they become a loss.
+- **FEFO rotation (First Expired, First Out):** Panca surfaces the lot with the earliest expiry date first in your stock view, so your team always picks the right batch to use or sell next.
+
+<Note>
+  Lot and expiry tracking is especially valuable for **pharmacies and boticas**, where expired stock is a compliance risk, and for **bodegas** and **restaurants** managing fresh dairy, proteins, and produce.
+</Note>
+
+## Waste (merma) registration
+
+Not all stock loss comes from sales. Panca lets you register waste separately so your stock numbers stay accurate and your reports reflect true losses.
+
+<Steps>
+  <Step title="Go to waste registration">
+    Navigate to **Inventario → Mermas** and select **Nueva merma**.
+  </Step>
+  <Step title="Select the ingredient or product">
+    Choose the item, enter the quantity lost, and select a reason (spoilage, breakage, kitchen error, etc.).
+  </Step>
+  <Step title="Save the entry">
+    Panca deducts the waste quantity from current stock and logs it in the movement history. Your reports will separate sales-driven consumption from waste so you can identify where losses are highest.
+  </Step>
+</Steps>
+
+## Multi-warehouse transfers (Empresarial plan)
+
+If you operate more than one branch, the Empresarial plan lets you manage stock centrally across all locations and move inventory between warehouses without losing visibility.
+
+<CardGroup cols={2}>
+  <Card title="Centralized stock view" icon="warehouse" href="/inventory/overview">
+    See real-time stock levels across every branch from a single dashboard. No need to log in to each location separately.
+  </Card>
+  <Card title="Warehouse-to-warehouse transfers" icon="arrow-right-arrow-left" href="/inventory/overview">
+    Create a transfer order to move stock from one branch to another. Both warehouses update immediately when the transfer is confirmed.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Review your alert thresholds at least once a month. Seasonal demand shifts — for example, higher avocado usage during summer or increased medication demand during flu season — mean that a threshold that worked in April may be too low by December. Keeping thresholds current ensures your alerts stay meaningful all year round.
+</Tip>
+
+## Related topics
+
+<CardGroup cols={2}>
+  <Card title="Recipes & Food Cost" icon="utensils" href="/inventory/recipes-and-food-cost">
+    Learn how recipes connect ingredients to sales so stock deducts automatically with every dish sold.
+  </Card>
+  <Card title="Inventory Overview" icon="boxes-stacked" href="/inventory/overview">
+    See the full picture of how Panca Inventory works end to end, from setup to reporting.
+  </Card>
+</CardGroup>

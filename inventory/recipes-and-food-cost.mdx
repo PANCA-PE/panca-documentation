@@ -1,0 +1,86 @@
+---
+title: "Recipes, Food Cost, and Ingredient Management"
+sidebarTitle: "Recipes & Costs"
+description: "Build dish recipes with exact ingredient quantities so Panca can calculate food cost percentage and gross margin automatically — and keep them current."
+---
+
+Knowing what a dish truly costs to produce is one of the most important numbers in restaurant management, yet most operators either guess or spend hours doing the math manually. Panca's recipe engine (ficha técnica) solves this: you define each dish once, and Panca calculates food cost percentage and gross margin instantly — then keeps those numbers up to date every time an ingredient price changes.
+
+## How recipes and food cost work
+
+<Steps>
+  <Step title="Add your ingredients">
+    Go to **Inventario → Insumos** and add each ingredient you use. For every item, specify:
+    - **Name** (e.g., Lomo fino, Arroz)
+    - **Unit of measure** (g, kg, ml, liters, units — see the note below)
+    - **Cost per unit** (the price you pay your supplier)
+  </Step>
+  <Step title="Create a recipe for each menu item">
+    Go to **Inventario → Recetas** and create a new recipe. Link each ingredient to the dish and enter the exact quantity used per serving. You can add as many ingredients as the dish requires.
+  </Step>
+  <Step title="Panca calculates food cost automatically">
+    As soon as you save the recipe, Panca calculates:
+    - **Total recipe cost** — the sum of every ingredient at its current price
+    - **Food cost %** — recipe cost ÷ selling price × 100
+    - **Gross margin (S/)** — selling price minus recipe cost
+  </Step>
+  <Step title="Update ingredient prices — all dishes update instantly">
+    When a supplier raises the price of beef or cooking oil, update the ingredient cost once in **Insumos**. Every recipe that uses that ingredient recalculates its food cost percentage immediately — no manual rework required.
+  </Step>
+</Steps>
+
+## Example: Lomo Saltado
+
+The table below shows how a typical Lomo Saltado recipe breaks down in Panca.
+
+| Ingredient | Qty | Unit | Cost |
+|---|---|---|---|
+| Beef tenderloin | 200 | g | S/7.50 |
+| Soy sauce | 30 | ml | S/0.80 |
+| Vegetables (onion, tomato, peppers) | 150 | g | S/1.50 |
+| Fries | 200 | g | S/1.20 |
+| Rice | 150 | g | S/0.55 |
+| Seasonings and condiments | — | — | S/0.25 |
+| **Total recipe cost** | | | **S/11.80** |
+
+With a selling price of **S/38.00**:
+
+- **Food cost:** 31.1% (S/11.80 ÷ S/38.00)
+- **Gross margin:** S/26.20
+
+<Tip>
+  The industry benchmark for restaurant food cost is **25–35%**. A dish sitting above 35% is a signal to either renegotiate supplier prices, adjust portion sizes, or reconsider the menu price. Panca shows you this percentage for every dish on one screen, so you can act on outliers immediately.
+</Tip>
+
+## Units of measure
+
+<Note>
+  Panca supports the following units of measure for ingredients: **kg**, **g**, **liters**, **ml**, **units**, and **portions**. You can mix units within a single recipe — for example, measuring beef in grams while measuring sauces in milliliters. Panca normalizes the costs automatically based on the unit price you entered for each ingredient.
+</Note>
+
+## What happens when a dish is sold
+
+Every time a server rings up a Lomo Saltado at the POS, Panca deducts the exact quantities in the recipe from your live ingredient stock — 200 g of beef tenderloin, 30 ml of soy sauce, 150 g of vegetables, and so on. Your stock numbers are always accurate without any manual entry.
+
+## Managing your ingredient catalog
+
+<CardGroup cols={2}>
+  <Card title="Full movement history" icon="clock-rotate-left" href="/inventory/overview">
+    Every ingredient has a complete log of entries, deductions, waste registrations, and manual adjustments so you can audit usage at any time.
+  </Card>
+  <Card title="Supplier & purchase order integration" icon="truck" href="/inventory/overview">
+    When you receive a purchase order, Panca updates ingredient stock and can automatically adjust the cost per unit if the supplier price changed.
+  </Card>
+</CardGroup>
+
+<Accordion title="Can I have multiple recipes for the same dish (e.g., lunch vs. dinner portion)?">
+  Yes. You can create separate recipes for different portion sizes or variations of the same dish. Give each recipe a distinct name (e.g., "Lomo Saltado — Lunch Portion" and "Lomo Saltado — Full") and link the appropriate one to each menu item or price list.
+</Accordion>
+
+<Accordion title="What if I use a sub-recipe (e.g., a house sauce made from multiple ingredients)?">
+  You can create a recipe for the sub-preparation (e.g., "Salsa Criolla") and then use it as an ingredient inside a parent recipe. Panca tracks the cost of the sub-recipe as a single line item in the parent dish.
+</Accordion>
+
+<Accordion title="Does food cost update in historical reports when I change a price?">
+  Historical sales reports reflect the food cost at the time of the sale. The updated food cost percentage applies to future sales. This lets you compare margins before and after a supplier price change.
+</Accordion>

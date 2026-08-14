@@ -1,0 +1,83 @@
+---
+title: "Electronic Invoicing with SUNAT — Boletas and Facturas"
+sidebarTitle: "Invoicing"
+description: "Panca is a SUNAT-homologated PSE. Emit boletas, facturas, and notas de crédito in 3 seconds, straight from the POS — no SUNAT portal needed."
+---
+
+Panca operates as an authorized **Proveedor de Servicios Electrónicos (PSE)** — meaning every comprobante you emit is validated directly with SUNAT in real time, with no manual steps on your end. Whether you run a restaurant, a minimarket, or a ferretería, you can emit an unlimited number of boletas, facturas, and notas de crédito from the same POS screen where you process payments. No separate invoicing software, no portal SOL, no after-the-fact entry.
+
+## What Panca emits
+
+| Document | When to use |
+|---|---|
+| **Boleta de venta** | Sales to consumers (DNI or anonymous) |
+| **Factura electrónica** | Sales to businesses — requires the buyer's RUC |
+| **Nota de crédito** | Cancellations, returns, or corrections to a previous comprobante |
+| **Nota de débito** | Adjustments that increase the value of a previous comprobante |
+
+All documents are validated with SUNAT within **3 seconds** of issuance and stored in Panca's cloud for **5 years** — meeting SUNAT's statutory retention requirement. The XML and CDR (Constancia de Recepción) for every comprobante are available for download at any time from your back office.
+
+## What you need to get started
+
+<Warning>
+  You must have an active **clave SOL** (SUNAT Operaciones en Línea) linked to your RUC before you can emit electronic comprobantes. If you don't have one yet, create it at [sol.sunat.gob.pe](https://sol.sunat.gob.pe) before beginning the setup steps below. Keep your clave SOL confidential — never share it via WhatsApp or email.
+</Warning>
+
+To connect Panca to SUNAT you need:
+
+- **RUC** — your 11-digit business tax ID, active and in good standing with SUNAT
+- **Clave SOL** — your SUNAT online operations password
+- **A Panca account** — any plan includes SUNAT invoicing with unlimited comprobantes
+
+## Setup: start emitting in 3 steps
+
+<Steps>
+  <Step title="Create your Panca account">
+    Sign up at [app.panca.pe](https://app.panca.pe) in under two minutes. Choose the plan that fits your business — all plans include electronic invoicing. Once your account is active, the Panca onboarding team contacts you to schedule a free configuration session.
+  </Step>
+  <Step title="Link your SUNAT credentials">
+    In **Configuración → Facturación SUNAT**, enter your RUC and clave SOL. Panca registers your digital certificate, configures your comprobante series (B001 for boletas, F001 for facturas), and runs a test emission to confirm the connection with SUNAT is working. This step typically takes under 15 minutes with Panca support on the call.
+  </Step>
+  <Step title="Emit your first comprobante">
+    Open any completed sale in the POS, tap **Emitir comprobante**, select **Boleta** or **Factura**, and confirm. Panca sends the XML to SUNAT, receives the CDR, and prints or displays the validated comprobante — all in 3 seconds. You're live.
+  </Step>
+</Steps>
+
+## RUC and DNI lookup
+
+When a customer requests a factura, tap the RUC field and start typing. Panca queries the SUNAT registry automatically and fills in the business name — you don't need to ask the customer to spell it out. The same lookup works for DNI on boletas where the buyer wants their name on the document.
+
+## Correcting mistakes: notas de crédito and débito
+
+Errors happen. Panca makes corrections straightforward.
+
+<Steps>
+  <Step title="Find the original comprobante">
+    Go to **Historial de comprobantes** and search by date, document number, or customer. Open the comprobante you need to correct.
+  </Step>
+  <Step title="Select the correction type">
+    Choose **Nota de crédito** (to reduce or cancel the original amount) or **Nota de débito** (to increase it). Select the reason from the SUNAT-defined list — for example, *Anulación de la operación* or *Devolución total*.
+  </Step>
+  <Step title="Confirm and emit">
+    Panca generates the correction document referencing the original comprobante number, validates it with SUNAT, and adds it to your comprobante history. The full audit trail — original document, correction document, and reason — is stored and exportable.
+  </Step>
+</Steps>
+
+## What happens if SUNAT is down
+
+Panca has an automatic retry queue. If SUNAT's servers don't respond at the moment of emission, the comprobante enters a pending queue and is sent automatically as soon as the SUNAT service recovers. Your operation never stops — you can keep selling and emitting documents even during SUNAT outages, and all pending comprobantes are delivered without any action required from you.
+
+## Reporting for your accountant
+
+<Tip>
+  At the end of each month, go to **Reportes → IGV Mensual** and export the period summary to Excel or PDF. The report includes total sales, IGV collected, breakdown by comprobante type (boletas vs. facturas), and a line-by-line transaction log. Send it directly to your accountant — no manual calculations needed.
+</Tip>
+
+Panca generates the following reports on demand:
+
+- **Reporte de IGV mensual** — total IGV collected, broken down by tax period
+- **Registro de ventas** — full transaction log with document numbers and amounts, exportable to Excel or PDF
+- **Resumen de comprobantes** — count and value of boletas, facturas, and notas de crédito emitted
+- **Cierre de caja tributario** — daily closing report that aligns payment totals with SUNAT-validated comprobantes
+
+All XML files and CDR receipts are stored in Panca's cloud for **5 years** in compliance with SUNAT regulations, and you can download any individual document from **Historial de comprobantes** at any time.

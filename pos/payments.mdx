@@ -1,0 +1,76 @@
+---
+title: "Accepting Payments and Closing the Register"
+sidebarTitle: "Payments"
+description: "Accept cash, card, Yape, Plin, and split payments in Panca. Learn how to process a sale and run your daily cierre de caja in one click."
+---
+
+Every order in Panca — whether it comes from a restaurant table or a retail checkout — flows into the same payment screen. From there you can collect payment in any combination of methods, emit the SUNAT comprobante, and print or send the receipt, all without leaving the POS. At the end of the day, a one-click cierre de caja gives you a complete picture of every sol that came in.
+
+## Accepted payment methods
+
+Panca supports all major payment methods used in Peru. You can use any of them individually or combine multiple methods in a single transaction.
+
+<CardGroup cols={2}>
+  <Card title="Cash (Efectivo)" icon="money-bill" href="/pos/payments">
+    Enter the amount tendered and Panca calculates change automatically. The cash amount feeds directly into the cierre de caja.
+  </Card>
+  <Card title="Credit & Debit Card" icon="credit-card" href="/pos/payments">
+    Record card payments manually or through an integrated terminal. Panca logs the payment type (credit vs. debit) for reporting.
+  </Card>
+  <Card title="Yape" icon="mobile" href="/pos/payments">
+    Register Yape transfers against the sale. The transaction appears in your payment breakdown labeled **Yape** for easy reconciliation.
+  </Card>
+  <Card title="Plin" icon="mobile-screen" href="/pos/payments">
+    Same flow as Yape. Plin payments are tracked separately in the cierre de caja so you can reconcile each wallet independently.
+  </Card>
+</CardGroup>
+
+## Processing a payment
+
+<Steps>
+  <Step title="Review the order total">
+    On the payment screen, confirm the line items and the total due. You can still apply a discount code or a manual discount percentage at this point before charging the customer.
+  </Step>
+  <Step title="Select the payment method">
+    Tap the method your customer is using: **Efectivo**, **Tarjeta**, **Yape**, **Plin**, or **Pago dividido**. If the customer wants to pay with more than one method, tap **Pago dividido** (see note below).
+  </Step>
+  <Step title="Enter the amount">
+    For cash, type the amount the customer hands you — Panca shows the change due instantly. For digital payments, the exact sale amount is pre-filled; confirm once the transfer is received.
+  </Step>
+  <Step title="Emit the comprobante">
+    Choose **Boleta** (for consumers using a DNI) or **Factura** (for businesses using a RUC). Panca looks up the RUC or DNI automatically and emits the SUNAT-validated comprobante in 3 seconds. See [Electronic Invoicing](/pos/electronic-invoicing) for details.
+  </Step>
+  <Step title="Print or send the receipt">
+    Print to a thermal printer with one tap, or send the digital comprobante by email or WhatsApp. The transaction is saved and visible immediately on all other devices connected to your account.
+  </Step>
+</Steps>
+
+<Note>
+  **Split payments (pagos divididos):** When a table wants to split the bill, tap **Pago dividido** and assign each portion a payment method. For example, one guest pays S/45 by Yape and another pays S/45 in cash. Panca generates a single comprobante for the full amount and records each portion separately in the payment breakdown, so your cierre de caja always balances.
+</Note>
+
+## Daily cash close (cierre de caja)
+
+At the end of your shift or business day, run the cierre de caja to reconcile everything that happened. Tap **Cerrar caja** from the main menu and Panca generates an instant summary.
+
+### What the cierre de caja shows
+
+| Section | Details |
+|---|---|
+| **Total de ventas** | Gross sales for the period, including IGV |
+| **Desglose por método de pago** | Subtotals for cash, card, Yape, Plin, and any other method used |
+| **Diferencias de caja** | Variance between the expected cash amount and what you physically count in the drawer |
+| **Comprobantes emitidos** | Count of boletas and facturas emitted, with a link to the full list |
+| **Descuentos y anulaciones** | Total value of discounts applied and sales voided during the period |
+
+<Tip>
+  Run the cierre de caja at the same time every day. A consistent closing time makes it easier to spot anomalies and gives your accountant clean, predictable reporting periods.
+</Tip>
+
+## Multi-device sync
+
+Panca is built for teams. Every payment processed on any device — a waiter's phone, the front-counter tablet, or the manager's laptop — syncs to the same account in real time. When you open the cierre de caja, it reflects every transaction across every device for that day. No manual consolidation needed.
+
+## No per-sale commissions
+
+Panca charges a flat monthly subscription. It doesn't matter whether you process S/1,000 or S/100,000 in a day — you pay the same amount. Payment method fees charged by card networks or digital wallets (Yape, Plin) are set by those providers, not by Panca.

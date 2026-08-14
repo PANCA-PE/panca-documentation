@@ -1,0 +1,95 @@
+---
+title: "Multi-Branch Reporting and Centralized Management"
+sidebarTitle: "Multi-Branch"
+description: "Manage all your locations from one dashboard — compare branch performance, consolidate SUNAT reports, and transfer stock between stores in real time."
+---
+
+When you operate more than one location, keeping track of everything separately quickly becomes unmanageable. Panca's multi-branch capabilities let you run each location as an independent unit while giving you a single dashboard where you can see, compare, and manage all of them at once. Sales, inventory, staff, and SUNAT compliance are all visible from one place — whether you have two branches or twenty.
+
+<Note>
+  Multi-branch management is available on the **Empresarial** plan. Each branch operates fully independently on its own POS, inventory, and cash register. Contact the Panca team to configure your Empresarial account.
+</Note>
+
+## What You Can Do from the Consolidated Dashboard
+
+<CardGroup cols={2}>
+  <Card title="Consolidated Sales View" icon="chart-bar" href="#set-up-multi-branch">
+    See total revenue across all branches in one chart, or drill into any individual location.
+  </Card>
+  <Card title="Branch Performance Comparison" icon="scale-balanced" href="#set-up-multi-branch">
+    Compare revenue, average ticket, and top products side by side across locations.
+  </Card>
+  <Card title="Centralized Inventory" icon="boxes-stacked" href="#set-up-multi-branch">
+    View stock levels at every branch from one screen and identify where inventory needs replenishing.
+  </Card>
+  <Card title="Inter-Branch Stock Transfers" icon="right-left" href="#set-up-multi-branch">
+    Move stock from one location to another with a transfer request logged in both branches automatically.
+  </Card>
+  <Card title="Unified SUNAT Reporting" icon="file-invoice" href="#set-up-multi-branch">
+    Generate consolidated or per-branch tax reports ready for your accountant in Excel or PDF.
+  </Card>
+  <Card title="Centralized Staff Management" icon="users" href="#set-up-multi-branch">
+    Manage user accounts and permissions across all branches from your main account.
+  </Card>
+</CardGroup>
+
+## Set Up Multi-Branch
+
+<Steps>
+  <Step title="Add your branches in Account Settings">
+    Go to **Configuración → Sucursales** and click **Agregar Sucursal**. Enter the branch name, address, and RUC (if different from the main entity). Each branch gets its own access credentials, so staff at one location only see their own POS and data by default.
+  </Step>
+  <Step title="Each branch operates independently">
+    Once created, each branch runs its own point of sale, manages its own cash register closes, and issues its own SUNAT-compliant receipts. Cashiers and waiters log in to their assigned branch and cannot access other locations unless you grant them permission.
+  </Step>
+  <Step title="View consolidated reports from the main dashboard">
+    Log in with your owner or administrator account and go to **Reportes → Multi-sucursal**. Use the branch selector at the top to switch between **All Branches** (consolidated) and any individual location. All the standard reports — sales by period, product ranking, margins, and cash register closes — are available for each view.
+  </Step>
+  <Step title="Transfer stock between branches">
+    Go to **Inventario → Transferencias** and click **Nueva Transferencia**. Select the source branch, the destination branch, and the products and quantities to move. Panca records the transfer in both branches' inventory logs automatically and updates stock levels in real time.
+  </Step>
+</Steps>
+
+## Comparing Branch Performance
+
+The branch comparison view sits inside **Reportes → Multi-sucursal → Comparativa**. It displays your key metrics side by side for all active locations:
+
+- Total revenue per branch for the selected period
+- Number of transactions and average ticket size
+- Top-selling products at each location
+- Cash register close status (open or closed) for today
+- Stock alerts from each branch in one feed
+
+You can export the comparison table to Excel for your own analysis or share it with investors and partners.
+
+## Unified SUNAT Reporting
+
+Each branch issues its own SUNAT-validated receipts with its own series and correlatives. At the consolidated level, Panca lets you:
+
+- View the combined IGV total across all branches for any given month
+- Download a per-branch breakdown of boletas and facturas issued
+- Export everything in the format your accountant or tax advisor needs — Excel or PDF
+
+All XML files and CDR (Constancias de Recepción) are stored for five years and accessible per branch from **Facturación → Historial**.
+
+## Inter-Branch Stock Transfers
+
+<Accordion title="How transfers are logged">
+  When you initiate a transfer, Panca records an outgoing movement in the source branch's inventory and a pending incoming movement in the destination branch. Once the destination branch confirms receipt, the movement is marked as complete and both stock counts are finalized. Every transfer includes a timestamp, the user who initiated it, and the quantities moved.
+</Accordion>
+
+<Accordion title="What happens if a transfer is rejected or partially received">
+  If the destination branch receives fewer units than requested — due to damage or count discrepancy — they can enter the actual quantity received when confirming. The source branch inventory adjusts only for the confirmed amount, and the difference is flagged for review.
+</Accordion>
+
+<Accordion title="Viewing transfer history">
+  Go to **Inventario → Transferencias → Historial** and filter by branch, date range, or product. You can download the full transfer log as a CSV for audit or accounting purposes.
+</Accordion>
+
+<Tip>
+  Check the consolidated dashboard weekly to identify your best-performing branch by revenue and by margin — they are not always the same location. A high-revenue branch with thin margins often signals a pricing or food-cost issue that is easy to fix once you see the data clearly.
+</Tip>
+
+<Warning>
+  Stock transfers are irreversible once the destination branch confirms receipt. Double-check quantities before confirming on both ends, especially for high-value or perishable items.
+</Warning>

@@ -1,0 +1,103 @@
+---
+title: "Taking Orders and Managing Tables with Panca"
+sidebarTitle: "Taking Orders"
+description: "Learn how to take restaurant table orders and send comandas to the kitchen, or run a fast barcode-scan checkout flow for retail stores."
+---
+
+Panca gives you two streamlined order flows depending on your business type: a full table-management experience for restaurants, and a fast barcode-scan checkout for retail stores. Both flows feed the same payment screen, inventory engine, and SUNAT invoicing module — so you only ever work in one system.
+
+<Tabs>
+  <Tab title="Restaurant">
+    ## Taking a restaurant order
+
+    From the moment a guest sits down to the moment their comanda hits the kitchen screen, every step happens in seconds. The waiter works on any device — a tablet at the table, a phone at the counter, or a shared POS terminal.
+
+    <Steps>
+      <Step title="Open a table from the floor plan">
+        On the **Tables** screen you see a color-coded map of your entire dining room:
+
+        - 🟢 **Free** — no active order
+        - 🔴 **Occupied** — order in progress
+        - 🟡 **Ready to pay** — order complete, waiting for bill
+
+        Tap any free table to open it and start a new order. Panca logs the opening time and the staff member who opened it, creating an audit trail from the very first tap.
+      </Step>
+      <Step title="Add items from the digital menu">
+        Browse your menu by category or search by name. Tap an item to add it to the order. Quantities update instantly and the running subtotal appears at the bottom of the screen.
+      </Step>
+      <Step title="Add notes and modifiers per item">
+        Tap any line item to open its modifier panel. Type a free-form note or select pre-configured options such as:
+
+        - *Sin cebolla* (no onion)
+        - *Extra picante* (extra spicy)
+        - *Porción personal* (single serving)
+        - *Extra arroz* (extra rice)
+
+        Modifiers travel with the item all the way to the kitchen display, so cooks never miss a special request.
+      </Step>
+      <Step title="Send the comanda to the kitchen">
+        Tap **Enviar a cocina**. The comanda appears on the Kitchen Display System (KDS) in under one second — no paper slips, no shouting across the pass. Each item shows the table number, the waiter's name, and any modifiers.
+      </Step>
+      <Step title="Track order status in real time">
+        Order status updates live on both the waiter's device and the kitchen screen as cooks work through each item:
+
+        | Status | Meaning |
+        |---|---|
+        | **Pendiente** | Comanda received, not yet started |
+        | **Preparando** | Cook has started the item |
+        | **Listo** | Item is ready to leave the kitchen |
+        | **Entregado** | Waiter confirmed delivery to the table |
+
+        You can add new items to an open table at any time — each addition generates a new comanda line with a timestamp, so the full audit trail is always intact.
+      </Step>
+    </Steps>
+
+    ## Managing tables and bills
+
+    ### Split and merge bills
+    Need to separate the office lunch from the personal drinks order? Tap **Dividir cuenta** on any open table and drag items into separate bills. Each bill processes its own payment and generates its own comprobante. To combine two tables that have been seated together, tap **Unir mesas** and select the second table.
+
+    ### Transfer an order between tables
+    If guests move tables, tap **Transferir pedido**, choose the destination table, and confirm. The entire order history — items, modifiers, timestamps — moves to the new table without any data loss.
+
+    ### Audit trail
+    Every action is logged: who opened the table, who added each item, who sent the comanda, and who processed payment. You can review the full history for any order from **Historial de pedidos** in the back office.
+  </Tab>
+  <Tab title="Retail">
+    ## Fast checkout for retail stores
+
+    The retail checkout flow is built for speed. A trained cashier can scan, price-check, and process payment for a full basket in well under a minute.
+
+    <Steps>
+      <Step title="Open a new sale">
+        From the POS home screen, tap **Nueva venta**. An empty cart opens immediately. Panca is ready to receive scans or manual product lookups.
+      </Step>
+      <Step title="Scan barcodes or search by name">
+        Point your USB or Bluetooth barcode scanner at the product. Panca looks up the item in your catalog instantly and adds it to the cart with the correct price.
+
+        If a product doesn't have a barcode, use the search bar — type a product name, SKU, or category to find it in seconds.
+
+        ```text
+        Scan: 7750000012345
+        → Inca Kola 500 ml — S/ 2.50 ✓
+        ```
+      </Step>
+      <Step title="Adjust quantities if needed">
+        Tap the quantity field on any cart line to change it, or scan the same item again to increment by one. Bulk entries (e.g. a crate of 24 units) can be entered manually.
+      </Step>
+      <Step title="Proceed to payment">
+        Tap **Cobrar** to move to the payment screen. Panca shows the total, calculates change for cash payments, and lets you split across multiple payment methods. See [Payments](/pos/payments) for the full payment flow.
+      </Step>
+    </Steps>
+
+    ### Product lookup without a barcode
+    If a product's barcode is damaged or missing, open the product search panel with **Ctrl+F** (keyboard) or the 🔍 icon (touchscreen). You can search by:
+    - Product name (partial matches work)
+    - Internal SKU
+    - Category or supplier
+  </Tab>
+</Tabs>
+
+<Tip>
+  **Offline mode:** If your internet connection drops, Panca keeps working. Orders, cart items, and payments are saved locally and sync to the cloud automatically as soon as connectivity returns. You won't lose a single sale.
+</Tip>

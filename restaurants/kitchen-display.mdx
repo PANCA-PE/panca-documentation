@@ -1,0 +1,83 @@
+---
+title: "Kitchen Display System (KDS) — Real-Time Order Routing"
+sidebarTitle: "Kitchen Display"
+description: "Replace paper tickets with a live kitchen screen. Orders reach each station instantly, sorted by urgency and tracked from pending to ready to delivered."
+---
+
+The Panca Kitchen Display System (KDS) replaces paper comandas and verbal order-calling with a live screen that sits in your kitchen and updates the moment a waiter submits an order. Every cook sees exactly what to prepare, in what order, and for which table — without a single sheet of paper or a shout across the pass. Orders are prioritized automatically by urgency, and each station receives only the items relevant to it, so your grill cook is never staring at a salad ticket and your cold station is never buried in hot-food orders.
+
+<Note>
+  The Kitchen Display System is available on the **Profesional** and **Empresarial** plans. If you are on the Básico plan and want to add KDS, [contact the Panca team](https://wa.me/51998338835) to upgrade.
+</Note>
+
+## How Orders Flow from POS to Kitchen
+
+<Steps>
+  <Step title="Waiter submits the order from the POS">
+    The waiter selects the table, adds items and any modifiers (e.g., "no cebolla", "bien cocido"), and taps **Send to kitchen**. The order leaves the POS in under a second.
+  </Step>
+  <Step title="The KDS screen lights up in the kitchen">
+    The order card appears on the kitchen display immediately, showing the table number, every item with its modifiers, and a running timer. High-priority orders — those that have been waiting the longest or were flagged as urgent — appear at the top of the queue automatically.
+  </Step>
+  <Step title="The cook marks the order as being prepared">
+    When a cook starts working on an order, they tap **Preparing** on the screen. The order card updates for everyone — kitchen team and floor staff — so no one duplicates the work.
+  </Step>
+  <Step title="The cook marks the order as ready">
+    Once all items on the ticket are plated, the cook taps **Ready**. The order card changes color to signal that the food is waiting at the pass.
+  </Step>
+  <Step title="The waiter is notified and delivers the order">
+    The waiter's device (tablet or phone) receives the ready notification instantly. They collect the dishes from the pass, deliver them to the correct table, and tap **Delivered** to close the ticket. The kitchen queue clears and the next order moves up.
+  </Step>
+</Steps>
+
+## Order Status Lifecycle
+
+Each order moves through four clear states that every team member can see in real time:
+
+<Tabs>
+  <Tab title="Pending">
+    The order has been submitted from the POS and is waiting for a cook to pick it up. The timer starts counting from this moment.
+  </Tab>
+  <Tab title="Preparing">
+    A cook has acknowledged the order and is actively working on it. The timer continues, helping managers spot bottlenecks during rush hours.
+  </Tab>
+  <Tab title="Ready">
+    All items are plated and waiting at the pass. The waiter receives an instant notification on their device.
+  </Tab>
+  <Tab title="Delivered">
+    The waiter has confirmed delivery to the table. The ticket is archived with a full timestamp for audit purposes.
+  </Tab>
+</Tabs>
+
+## Station-Based Routing
+
+Not every station needs to see every order. Panca routes each item only to the station responsible for it, keeping each screen clean and focused.
+
+<CardGroup cols={2}>
+  <Card title="Grill Station" icon="fire-flame-curved" href="/restaurants/kitchen-display">
+    Receives all proteins and hot mains. Salads, cold starters, and desserts never appear on this screen.
+  </Card>
+  <Card title="Cold / Salad Station" icon="leaf" href="/restaurants/kitchen-display">
+    Receives cold starters, ceviche, salads, and cold appetizers. Hot tickets are filtered out automatically.
+  </Card>
+  <Card title="Fry Station" icon="temperature-high" href="/restaurants/kitchen-display">
+    Handles all fried items — papas fritas, chicharrón, tequeños — so the fryer cook works off a dedicated, uncluttered queue.
+  </Card>
+  <Card title="Drinks / Bar Station" icon="martini-glass-citrus" href="/restaurants/kitchen-display">
+    Beverages and cocktails go straight to the bar screen, separate from food tickets, so drinks arrive at the table on time.
+  </Card>
+</CardGroup>
+
+## Why KDS Beats Paper Comandas
+
+| Paper tickets | Panca KDS |
+|---|---|
+| Handwriting can be misread | Every order is typed and clear |
+| Tickets get wet, lost, or thrown away | Orders live on a screen with full history |
+| No way to track how long orders take | Live timers on every order card |
+| Shouting across the kitchen to update status | Status updates happen silently on every device |
+| No historical data | Full audit trail: who submitted, who prepared, timestamps |
+
+<Tip>
+  If your kitchen has distinct areas — for example, a hot kitchen and a cold preparation area — set up a **separate KDS screen for each station**. Each screen only shows the items assigned to that station, so your kitchen runs faster and with fewer collisions between teams. You can connect as many KDS screens as you need on the Profesional and Empresarial plans.
+</Tip>
